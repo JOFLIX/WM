@@ -1,0 +1,89 @@
+/*---------------------------------------------------------- */
+/* [ -- Master Stylesheet -- ] */
+/* ------------- Index of Stylesheet -------------
+:: 1.0 Import Fonts
+:: 2.0 Import All CSS
+:: 3.0 Base CSS
+:: 4.0 Header Area CSS
+:: 5.0 Welcome Area CSS
+:: 6.0 Book An Appoinment Area
+:: 7.0 About Us Area CSS
+:: 8.0 Service Area CSS
+:: 9.0 Gallery Area CSS
+:: 10.0 Features Area CSS
+:: 11.0 Emergency Area CSS
+:: 12.0 Footer Area CSS
+:: 13.0 Breadcumb Area CSS
+:: 14.0 Video Area CSS
+:: 15.0 Tabs Area CSS
+:: 16.0 Services Area CSS
+:: 17.0 Single Benefits Area CSS
+:: 18.0 CTA Area CSS
+:: 19.0 Blog Area CSS
+:: 20.0 Contact Area CSS
+:: 21.0 Shortcode Area CSS
+
+/* :: 1.0 Import Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/* :: 2.0 Import All CSS */
+@import url(css/bootstrap.min.css);
+@import url(css/animate.css);
+@import url(css/owl.carousel.css);
+@import url(css/magnific-popup.css);
+@import url(css/font-awesome.min.css);
+@import url(css/themify-icons.css);
+@import url(css/medilife-icons.css);
+@import url(css/nice-select.css);
+/* :: 3.0 Base CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #081f3e;
+  font-weight: 700; }
+
+p {
+  color: #blue;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400; }
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+  #jumbotron{
+    background-color: transparent;
+  }
+  .header-area {
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: auto;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+  }
+
+.header-btn{
+  position:relative;
+
+  }
+.header-btn a{
+  border-left: 10px solid #5c6cdf;
+  display: block;
+  font-size: 26px;
+}

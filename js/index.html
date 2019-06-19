@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imgs/pizzadianey.jpg">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+    <script src="js/fontawesome.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/file.js">
+
+    </script>
+    <link rel="stylesheet" href="css/_animated.scss">
+
+      <script type="text/javascript" src="js/mdb.js" async></script>
+<title>PizzaDisney-Menu</title>
+  </head>
+  <body>
+
+    <!-- Some images will show error in console due not having 'https' in the url,  nothing to worry about -->
+  <input type="checkbox" id="cartToggle" name="toggle">
+
+      <!-- Menu -->
+      <nav class="navbar">
+        <h2 id="logo">PizzaDisney</h2>
+        <div>
+          <label for="cartToggle" class="toggleCart btnStyle btnStyle2"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-circle" aria-hidden="true"></i>
+          <span class="num"></span>
+  </label>
+        </div>
+      </nav><!-- End of Navigation -->
+
+      <div class="body-content">
+
+      <!-- Cart -->
+      <nav class="cart">
+        <h3>List of orders: <span>0Kshs</span></h3>
+        <ol id="listOfOrders">
+        </ol>
+        <a class="btnStyle btnStyle3 finishOrder">Finish Order</a>
+      </nav>
+
+        <div class="recipe-menu">
+
+          <!-- Recipe 1 -->
+          <div class="recipe">
+            <p class="name">Large</p>
+            <img src="imgs/New-York-Style-Pizza.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartLarge">Add to Cart</a>
+            <p class="price"><span>20</span>Kshs</p>
+            <div id="checkOrderLarge" title="Large">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe1">
+                <li><input type="checkbox" checked>Sesame Bun</li>
+                <li><input type="checkbox" checked>Ground Beef Patty</li>
+                <li><input type="checkbox" checked>Onion</li>
+                <li><input type="checkbox" checked>Pickle</li>
+                <li><input type="checkbox" checked>Lettuce Salad</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog1">Total: <span>20</span>Kshs</h4>
+            </div>
+          </div>
+
+          <!-- Recipe 2 -->
+          <div class="recipe">
+            <p class="name">Medium</p>
+            <img src="imgs/default-pizza-crust-_Fotor.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartMedium">Add to Cart</a>
+            <p class="price"><span>20</span></span>Kshs</p>
+            <div id="checkOrderMedium" title="Medium">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe2">
+                <li><input type="checkbox" checked>Macaroni</li>
+                <li><input type="checkbox" checked>Paprica</li>
+                <li><input type="checkbox" checked>Tomato</li>
+                <li><input type="checkbox" checked>Chease</li>
+                <li><input type="checkbox" checked>Zucchini</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog2">Total: <span>20</span>Kshs</h4>
+            </div>
+          </div>
+
+          <!-- Recipe 3 -->
+          <div class="recipe">
+            <p class="name">Small</p>
+            <img src="imgs/PIZZ.jpg">
+            <a class="btnStyle3 btnStyle addToCart" id="addToCartPizza">Add to Cart</a>
+            <p class="price"><span>18</span>Kshs</p>
+            <div id="checkOrderPizza" title="Pizza">
+              <h3 class="listHeading">List of Ingredients:</h3>
+              <ul class="listOfIngredients" id="recipe3">
+                <li><input type="checkbox" checked>Tomato Sauce</li>
+                <li><input type="checkbox" checked>Cheese</li>
+                <li><input type="checkbox" checked>Peperoni</li>
+                <li><input type="checkbox" checked>Olives</li>
+                <li><input type="checkbox" checked>Mushrooms</li>
+                <li><input type="checkbox" checked>Basil</li>
+              </ul>
+              <a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
+              <a class="btnStyle listOver">Done</a>
+              <h4 class="totalDialog" id="totalDialog3">Total: <span>20</span>Kshs</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="finishOrderDialog" title="Confirm Order">
+        <div id="finalOrderList">
+          <h3>Your Orders:</h3>
+          <ol></ol>
+        </div>
+        <div id="buyerInfo">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <input type="text" id="buyerNumber" placeholder="Enter Phone Number">
+          <input type="text" id="buyerAddress" placeholder="Enter Address">
+          <input type="text" id="buyerName" placeholder="Enter Name">
+          <a class="btnStyle order">Order!</a>
+        </div>
+      </div>
+
+      <div id="thanksMessage">
+        <h1>Thank you for the order</h1>
+        <h3>We will have it delivered soon</h3>
+      </div>
+      </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
