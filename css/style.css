@@ -41,7 +41,15 @@
 
 body {
   font-family: "Roboto", sans-serif; }
-
+  body{
+   background-image: url("/img/giphy.gif");
+   background-color: #cccccc;
+   width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+  }
 h1,
 h2,
 h3,
@@ -52,16 +60,13 @@ h6 {
   font-weight: 700; }
 
 p {
-  color: #blue;
+  color:black;
   font-size: 15px;
   line-height: 2;
   font-weight: 400; }
 
 }
-* {
-    margin: 0;
-    padding: 0;
-}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -87,3 +92,19 @@ p {
   display: block;
   font-size: 26px;
 }
+/* stylin the navbar */
+.header-area .main-menu .nav-link {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0 1px;
+}
+/* 4.Styling the corousel */
+/* 4.1 /* Make the image fully responsive */
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
