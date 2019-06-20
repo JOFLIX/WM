@@ -1,6 +1,6 @@
-/*---------------------------------------------------------- */
-/* [ -- Master Stylesheet -- ] */
-/* ------------- Index of Stylesheet -------------
+        /*---------------------------------------------------------- */
+        /* [ -- Master Stylesheet -- ] */
+        /* ------------- Index of Stylesheet -------------
 :: 1.0 Import Fonts
 :: 2.0 Import All CSS
 :: 3.0 Base CSS
@@ -24,32 +24,133 @@
 :: 21.0 Shortcode Area CSS
 
 /* :: 1.0 Import Fonts */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-/* :: 2.0 Import All CSS */
-@import url(css/bootstrap.min.css);
-@import url(css/animate.css);
-@import url(css/owl.carousel.css);
-@import url(css/magnific-popup.css);
-@import url(css/font-awesome.min.css);
-@import url(css/themify-icons.css);
-@import url(css/medilife-icons.css);
-@import url(css/nice-select.css);
-/* :: 3.0 Base CSS */
-* {
+
+        @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+        /* :: 2.0 Import All CSS */
+
+        @import url(css/bootstrap.min.css);
+        @import url(css/animate.css);
+        @import url(css/owl.carousel.css);
+        @import url(css/magnific-popup.css);
+        @import url(css/font-awesome.min.css);
+        @import url(css/themify-icons.css);
+        @import url(css/medilife-icons.css);
+        @import url(css/nice-select.css);
+        /* :: 3.0 Base CSS */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background-image: url("/img/giphy.gif");
+            background-color: #cccccc;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #081f3e;
+            font-weight: 700;
+        }
+
+        p {
+            color: black;
+            font-size: 15px;
+            line-height: 2;
+            font-weight: 400;
+        }
+
+        *,
+         ::after,
+         ::before {
+            box-sizing: border-box;
+        }
+
+        #jumbotron {
+            background-color: transparent;
+        }
+
+        .header-area {
+            position: absolute;
+            z-index: 10000;
+            width: 100%;
+            height: auto;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+        }
+
+        .header-btn {
+            position: relative;
+        }
+
+        .header-btn a {
+            border-left: 10px solid #5c6cdf;
+            display: block;
+            font-size: 26px;
+        }
+        /* stylin the navbar */
+
+        .header-area .main-menu .nav-link {
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            color: #ffffff;
+            font-weight: 500;
+            margin: 0 1px;
+        }
+        /* 4.Styling the corousel */
+        /* 4.1 /* Make the image fully responsive */
+
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 70%;
+            margin: auto;
+        }
+        /* styling the emergency button */
+
+        .medilife-appoint-btn {
+            display: inline-block;
+            color: #ffffff;
+            background-color: lightblue;
+            height: 50px;
+            padding: 0 15px;
+            line-height: 50px;
+            font-size: 14px;
+            min-width: 140px;
+            border-radius: 0;
+            font-weight: 500;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            text-transform: uppercase;
+            box-shadow: none;
+        }
+
+        navbar {
+            padding: 0px;
+            background-color: red;
+        }
+
+        * {
   margin: 0;
   padding: 0; }
 
 body {
   font-family: "Roboto", sans-serif; }
-  body{
-   background-image: url("/img/giphy.gif");
-   background-color: #cccccc;
-   width: 100%;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   position: relative;
-  }
+
 h1,
 h2,
 h3,
@@ -60,51 +161,380 @@ h6 {
   font-weight: 700; }
 
 p {
-  color:black;
+  color: #57595c;
   font-size: 15px;
   line-height: 2;
   font-weight: 400; }
 
-}
-
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-  #jumbotron{
-    background-color: transparent;
-  }
-  .header-area {
-    position: absolute;
-    z-index: 10000;
-    width: 100%;
-    height: auto;
+a {
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-decoration: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700; }
+  a:hover, a:focus {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-  }
-
-.header-btn{
-  position:relative;
-
-  }
-.header-btn a{
-  border-left: 10px solid #5c6cdf;
-  display: block;
-  font-size: 26px;
-}
-/* stylin the navbar */
-.header-area .main-menu .nav-link {
+    text-decoration: none;
+    outline: none;
     font-size: 14px;
-    text-transform: capitalize;
-    padding: 10px 20px;
+    font-weight: 700; }
+
+#preloader {
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100000;
+  background-color: #006cff; }
+
+.medilife-load {
+  -webkit-animation: 2000ms linear 0s normal none infinite running medilife-load;
+  animation: 2000ms linear 0s normal none infinite running medilife-load;
+  background: transparent;
+  border-color: #ffffff;
+  border-top-color: #006cff;
+  border-left-color: #006cff;
+  border-right-color: #006cff;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  height: 50px;
+  left: calc(50% - 25px);
+  position: relative;
+  top: calc(50% - 25px);
+  width: 50px;
+  z-index: 9; }
+
+@-webkit-keyframes medilife-load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes medilife-load {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+ul,
+ol {
+  margin: 0; }
+  ul li,
+  ol li {
+    list-style: none; }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+.medica-table {
+  display: table;
+  z-index: 9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.medica-table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mt-70 {
+  margin-top: 70px; }
+
+.mt-100 {
+  margin-top: 100px; }
+
+.mb-15 {
+  margin-bottom: 15px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.ml-15 {
+  margin-left: 15px; }
+
+.ml-30 {
+  margin-left: 30px; }
+
+.mr-15 {
+  margin-right: 15px; }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.mb-70 {
+  margin-bottom: 70px; }
+
+.mb-100 {
+  margin-bottom: 100px; }
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bg-transparent {
+  background-color: transparent; }
+
+.bg-transparent-dark {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+.bg-transparent-light {
+  background-color: rgba(255, 255, 255, 0.5) !important; }
+
+.font-bold {
+  font-weight: 700; }
+
+.font-light {
+  font-weight: 300; }
+
+.height-500 {
+  height: 500px !important; }
+
+.height-600 {
+  height: 600px !important; }
+
+.height-700 {
+  height: 700px !important; }
+
+.height-800 {
+  height: 800px !important; }
+
+#scrollUp {
+  background-color: #006cff;
+  border-radius: 50%;
+  bottom: 60px;
+  right: 60px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 30px;
+  height: 70px;
+  text-align: center;
+  width: 70px;
+  line-height: 66px;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  #scrollUp:hover {
+    background-color: #081f3e; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    #scrollUp {
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+      width: 50px;
+      line-height: 46px; } }
+  @media only screen and (max-width: 767px) {
+    #scrollUp {
+      bottom: 30px;
+      right: 30px;
+      height: 50px;
+      width: 50px;
+      line-height: 46px; } }
+
+.section-padding-100 {
+  padding: 100px 0; }
+
+.section-padding-50 {
+  padding: 50px 0; }
+
+.section-padding-50-0 {
+  padding: 50px 0 0 0; }
+
+.section-padding-100-70 {
+  padding: 100px 0 70px; }
+
+.section-padding-100-50 {
+  padding: 100px 0 50px; }
+
+.section-padding-100-0 {
+  padding: 100px 0 0; }
+
+.section-padding-0-100 {
+  padding: 0 0 100px; }
+
+.section-padding-100-20 {
+  padding: 100px 0 20px 0; }
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1; }
+  .section-heading h2 {
+    font-size: 44px;
+    margin-bottom: 0; }
+
+.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+  .btn:hover, .btn:focus {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15); }
+
+.medilife-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #006cff;
+  height: 45px;
+  padding: 0 55px 0 30px;
+  line-height: 42px;
+  font-size: 14px;
+  min-width: 140px;
+  border-radius: 0;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms; }
+  .medilife-btn span {
+    width: 40px;
+    height: 45px;
+    background-color: #081f3e;
+    display: inline-block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 24px;
     color: #ffffff;
     font-weight: 500;
-    margin: 0 1px;
-}
-/* 4.Styling the corousel */
-/* 4.1 /* Make the image fully responsive */
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-    width: 70%;
-    margin: auto;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms; }
+  .medilife-btn:hover, .medilife-btn:focus {
+    background-color: #081f3e;
+    color: #ffffff; }
+  .medilife-btn:hover span, .medilife-btn:focus span {
+    color: #ffffff;
+    background-color: #006cff; }
+  .medilife-btn.btn-2 {
+    background-color: #081f3e;
+    color: #ffffff; }
+    .medilife-btn.btn-2 span {
+      color: #ffffff;
+      background-color: #006cff; }
+    .medilife-btn.btn-2:hover, .medilife-btn.btn-2:focus {
+      background-color: #006cff;
+      color: #ffffff; }
+    .medilife-btn.btn-2:hover span, .medilife-btn.btn-2:focus span {
+      color: #ffffff;
+      background-color: #081f3e; }
+  .medilife-btn.btn-3 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+    .medilife-btn.btn-3 span {
+      top: -2px;
+      right: -2px; }
+  .medilife-btn.btn-4 {
+    background-color: #ffffff;
+    color: #081f3e;
+    border: 2px solid;
+    border-color: #006cff; }
+    .medilife-btn.btn-4 span {
+      background-color: #006cff;
+      top: -2px;
+      right: -2px; }
+
+.medilife-appoint-btn {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #ff0000;
+  height: 50px;
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  min-width: 140px;
+  border-radius: 0;
+  font-weight: 500;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: uppercase;
+  box-shadow: none; }
+  .medilife-appoint-btn span {
+    font-weight: 700; }
+  .medilife-appoint-btn:hover, .medilife-appoint-btn:focus {
+    color: #006cff;
+    background-color: #ffffff;
+    box-shadow: none;
+    font-weight: 500; }
+  .medilife-appoint-btn:hover span, .medilife-appoint-btn:focus span {
+    font-weight: 700; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .medilife-appoint-btn {
+      margin-top: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .medilife-appoint-btn {
+      margin-top: 10px; } }
+
+.bg-overlay {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #006cff;
+    opacity: 0.85;
+    content: ''; }
+
+.bg-overlay-black {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay-black::after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.85;
+    content: ''; }
+
+.bg-overlay-white {
+  position: relative;
+  z-index: 1; }
+  .bg-overlay-white::after {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 241, 255, 0.5);
+    content: ''; }
+
+.bg-gray {
+  background-color: #f5f7f9; }
+  , ::after, ::before {
+      box-sizing: border-box;
   }
+
+  *, ::after, ::before {
+      box-sizing: border-box;
+  }
+  .medilife-book-an-appoinment-area .medilife-contact-info {
+    background-color: rgb(0, 108, 255);
+    padding: 30px;
+}
