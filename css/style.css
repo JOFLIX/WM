@@ -118,14 +118,7 @@
             box-shadow: none;
         }
 
-        navbar {
-            padding: 0px;
-            background-color: red;
-        }
 
-        * {
-  margin: 0;
-  padding: 0; }
 
 body {
   font-family: "Roboto", sans-serif; }
@@ -275,23 +268,7 @@ img {
 .bg-transparent-light {
   background-color: rgba(255, 255, 255, 0.5) !important; }
 
-.font-bold {
-  font-weight: 700; }
 
-.font-light {
-  font-weight: 300; }
-
-.height-500 {
-  height: 500px !important; }
-
-.height-600 {
-  height: 600px !important; }
-
-.height-700 {
-  height: 700px !important; }
-
-.height-800 {
-  height: 800px !important; }
 
 #scrollUp {
   background-color: #006cff;
@@ -510,4 +487,7 @@ img {
   .medilife-book-an-appoinment-area .medilife-contact-info {
     background-color: rgb(0, 108, 255);
     padding: 30px;
+}
+#nav{
+  background-color:#081f3e
 }
