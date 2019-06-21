@@ -1,27 +1,6 @@
         /*---------------------------------------------------------- */
         /* [ -- Master Stylesheet -- ] */
-        /* ------------- Index of Stylesheet -------------
-:: 1.0 Import Fonts
-:: 2.0 Import All CSS
-:: 3.0 Base CSS
-:: 4.0 Header Area CSS
-:: 5.0 Welcome Area CSS
-:: 6.0 Book An Appoinment Area
-:: 7.0 About Us Area CSS
-:: 8.0 Service Area CSS
-:: 9.0 Gallery Area CSS
-:: 10.0 Features Area CSS
-:: 11.0 Emergency Area CSS
-:: 12.0 Footer Area CSS
-:: 13.0 Breadcumb Area CSS
-:: 14.0 Video Area CSS
-:: 15.0 Tabs Area CSS
-:: 16.0 Services Area CSS
-:: 17.0 Single Benefits Area CSS
-:: 18.0 CTA Area CSS
-:: 19.0 Blog Area CSS
-:: 20.0 Contact Area CSS
-:: 21.0 Shortcode Area CSS
+
 
 /* :: 1.0 Import Fonts */
 
@@ -173,13 +152,7 @@ a {
   outline: none;
   font-size: 14px;
   font-weight: 700; }
-  a:hover, a:focus {
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    text-decoration: none;
-    outline: none;
-    font-size: 14px;
-    font-weight: 700; }
+
 
 #preloader {
   overflow: hidden;
