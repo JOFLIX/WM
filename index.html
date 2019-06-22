@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <i type="icon" href="images/512x512bb.jpg"></i>
+
+    <link rel="icon" href="images/08txc1560958531.png">
     <link rel="stylesheet" href="css/_carousels.scss">
     <link rel="stylesheet" href="css/_dropdowns.scss">
     <link rel="stylesheet" href="css/_popover.scss">
@@ -14,70 +15,71 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/mdb.lite.scss">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <script src="js/jquery-ui.js" async>
+
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
     <title></title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="main-header-area" id="stickyHeader" style="width: 1280px;">
-            <div class="container h-100">
-                <div class="row h-100 align-items-center">
-                    <div class="col-12 h-100">
-                        <div class="main-menu h-100">
-                            <nav class="navbar h-100 navbar-expand-lg">
+      <div class="main-menu h-100" style="height:300px">
+                                <!--Navbar -->
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav" style="background-color:#081f3e; height:88px;padding:20px">
+                                  <a class="navbar-brand" href="#"><img src="images/nyTRa1560879050.png" style="height:44px" ></a>
+                                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                  </button>
 
-                                <a class="navbar-brand" href="index.html"><img src="img/core-img/logo.png" alt="Logo"></a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#medilifeMenu" aria-controls="medilifeMenu" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-                                <div class="collapse navbar-collapse" id="medilifeMenu">
-
-                                    <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a class="dropdown-item" href="index.html">Home</a>
-                                                <a class="dropdown-item" href="about-us.html">About Us</a>
-                                                <a class="dropdown-item" href="services.html">Services</a>
-                                                <a class="dropdown-item" href="blog.html">News</a>
-                                                <a class="dropdown-item" href="single-blog.html">News Details</a>
-                                                <a class="dropdown-item" href="contact.html">Contact</a>
-                                                <a class="dropdown-item" href="elements.html">Elements</a>
-                                                <a class="dropdown-item" href="index-icons.html">All Icons</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about-us.html">About Us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="services.html">Services</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="blog.html">News</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
+                                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact</a>
+                                      </li>
+                                      <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Pages
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="#services">Services</a>
+                                          <a class="dropdown-item" href="#News">News</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">Support</a>
+                                        </div>
+                                      </li>
+                                      <!-- <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Disabled</a>
+                                      </li> -->
                                     </ul>
-
-                                    <a href="#" class="btn medilife-appoint-btn ml-30">For <span>emergencies</span> Click here</a>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                                      <button class="btn btn-outline-danger my-2 my-sm-0" id="emergency" type="submit">FOR EMERGENCY CASES,<strong>CLICK HERE!</strong></button>
+                                    </form>
+                                  </div>
+                                </nav>
+      <!--/.Navbar -->
+      </div>
         <!-- carousels -->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top:2%">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -90,58 +92,417 @@
             <div class="carousel-inner" role="listbox">
 
                 <div class="item active">
-                    <img src=" images/choicetwo.jpg " alt="choice one " width="460 " height="345 ">
-          <div class="carousel-caption ">
-            <h3>Chania</h3>
-            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-          </div>
+                    <img src=" images/choicetwo.jpg " alt="choice one "  height="200 ">
+                    <div class="carousel-caption ">
+                        <h3>Health Support</h3>
+                        <p>We step in to support you.</p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="images/choiceone.jpg " alt="Chania " height="200">
+                    <div class="carousel-caption ">
+                        <h3>A free Woman</h3>
+                        <p>Imagine a free world where a woman is not stigmatized of what nature acorded her! Bleeding isn't a disability.</p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="images/choiceactivities.jpg " alt="Flower " height="200 ">
+                    <div class="carousel-caption ">
+                        <!-- <h3>Our Girls require a proper education</h3> -->
+                        <p>These are the beauty of our present and future world..</p>
+                    </div>
+                </div>
+
+                <div class="item ">
+                    <img src="images/corousel (1).jpg " alt="Flower " width="200">
+                    <div class="carousel-caption ">
+                        <h3>Flowers</h3>
+                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <img src="images/reproductive-health-in-Africa-08.width-800.jpg" alt="Flower " width="200">
+                    <div class="carousel-caption ">
+                        <h3>Flowers</h3>
+                        <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control " href="#myCarousel " role="button " data-slide="prev ">
+                <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
+                <span class="sr-only ">Previous</span>
+            </a>
+            <a class="right carousel-control " href="#myCarousel " role="button " data-slide="next ">
+                <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
+                <span class="sr-only ">Next</span>
+            </a>
         </div>
 
-        <div class="item ">
-          <img src="images/choiceone.jpg " alt="Chania " width="460 " height="345 ">
-          <div class="carousel-caption ">
-            <h3>Chania</h3>
-            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-          </div>
-        </div>
+     <!-- section two -->
+<div class="row"style="padding-top:5%;">
+  <div class="col-1">
 
-        <div class="item ">
-          <img src="images/choiceactivities.jpg " alt="Flower " width="460 " height="345 ">
-          <div class="carousel-caption ">
-            <h3>Flowers</h3>
-            <p>Beautiful flowers in Kolymbari, Crete.</p>
-          </div>
-        </div>
-
-        <div class="item ">
-          <img src="images/corousel (1).jpg " alt="Flower " width="460 " height="345 ">
-          <div class="carousel-caption ">
-            <h3>Flowers</h3>
-            <p>Beautiful flowers in Kolymbari, Crete.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control " href="#myCarousel " role="button " data-slide="prev ">
-        <span class="glyphicon glyphicon-chevron-left " aria-hidden="true "></span>
-        <span class="sr-only ">Previous</span>
-      </a>
-      <a class="right carousel-control " href="#myCarousel " role="button " data-slide="next ">
-        <span class="glyphicon glyphicon-chevron-right " aria-hidden="true "></span>
-        <span class="sr-only ">Next</span>
-      </a>
-    </div>
-<div class="card-footer">
-  <div class="columns">
-  <div class="column">1</div>
-  <div class="column">2</div>
-  <div class="column">3</div>
-  <div class="column">4</div>
-</div>
-</div>
   </div>
+<div class="col-7">
+  <section style="background-image:url(images/D145_164_269_1200.jpg)">
+    <div class="card-body" style="background-color:#081f3e">
+      <form action="/action_page.php">
+        <div class="form-row">
+          <div class="form-group col-6">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Doctor 1</option>
+                <option>Doctor 2</option>
+                <option>Doctor 3</option>
+                <option>Doctor 4</option>
+                <option>Doctor 5</option>
+              </select>
+            </div>
+            <div class="form-col">
+
+                Date: <input type="date" name="bday">
+
+            </div>
+        </div>
+   <div class="form-row">
+
+     <div class="form-group col-md-6">
+       <label for="inputEmail4">Email</label>
+       <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+     </div>
+
+   </div>
+   <div class="form-group">
+     <label for="inputAddress">Address</label>
+     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+   </div>
+   <div class="form-group">
+     <label for="inputAddress2">Address 2</label>
+     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+   </div>
+   <div class="form-row">
+     <div class="form-group col-md-6">
+       <label for="inputCity">City</label>
+       <input type="text" class="form-control" id="inputCity">
+     </div>
+     <div class="form-group col-md-4">
+       <label for="inputState">State</label>
+       <select id="inputState" class="form-control">
+         <option selected>Enter state...</option>
+         <option>...</option>
+       </select>
+     </div>
+     <div class="form-group col-md-2">
+       <label for="inputZip">Zip</label>
+       <input type="text" class="form-control" id="inputZip">
+     </div>
+   </div>
+   <div class="form-group">
+     <div class="form-check">
+       <input class="form-check-input" type="checkbox" id="gridCheck">
+       <label class="form-check-label" for="gridCheck">
+         Check me out
+       </label>
+     </div>
+   </div>
+   <button type="submit" class="btn btn-primary">Make an Paapointment<span style="background-color:#1c6edd">+</span></button>
+ </form>
+    </div>
+  </div>
+  <div class="col-3" id="contact" style="background-color:#1c6edd">
+    <div class="medilife-contact-info">
+
+  <div class="single-contact-info mb-30">
+  <img src="images/alarm-clock.png" alt="">
+  <p>Mon - Sat 08:00 - 21:00 <br>Sunday CLOSED</p>
+  </div>
+
+  <div class="single-contact-info mb-30">
+  <img src="images/envelope.png" alt="">
+  <p>+254708275041<br><a href="mailto:joflixo@gmail.com?subject=feedback" style="color:white">wm@gmail.com</a></p>
+  </div>
+
+
+  <div class="single-contact-info">
+  <img src="images/map-pin.png" alt="">
+  <p>Biashara Str, no 14-18 <br>41770 Ngong' Road</p>
+  </div>
+  </div>
+  </div>
+  </section>
+  <hr>
+  <!-- end of second section -->
+  <!-- beginning the thisrd section -->
+ <section style="padding-top:5%;" id="services">
+   <h3 style="padding-left:5%">Services</h3>
+   <div class="row">
+
+     <div class="col-1">
+
+     </div>
+     <div class="col-3" style="padding-left:2%;">
+  <h1>We are always there for our girls and mothers. <br> Women first!</h1>
+  <p>
+    Women and adolescent girls have been disadvantaged, and in silent pain that to the unfortunate, it is monthly.
+    It is worying that the information that has been supplied in the market is either not enough or,
+    is not clear, but in most cases, the information is not there,
+    not because there is none actually, but beacuse it is greatly finite and less distributed.
+    Gladly, WM steps in at this moment to empower, secure and invest in women.
+    Our planet needs alot of women whom are efficient, and beneficial.
+  </p>
+  <a href="#" class="btn medilife-btn mt-50">View the services <span>+</span></a>
+     </div>
+
+     <div class="col-4">
+       <div class="row">
+
+           <h4><span style="  content: #e988; padding:1%;"><i class="fas fa-user-md fa-3x !important"></i></span>Best Doctors</h4>
+           <p style="padding-left:3%;">We link you to the best gynecologists and other specialists with whom we have complete confidence in!</p>
+       </div>
+       <div class="row">
+        <div class="col-12">
+          <h4><span style="padding:3%"><i class="fas fa-hand-holding-heart fa-3x"></i></span>Blood Donation</h4>
+          <p style="padding-left:3%;">We provide blod donation services, and offer education tailored to ofer knowledge about blood and our bodies.</p>
+        </div>
+       </div>
+     </div>
+     <div class="col-3">
+ <div class="row">
+ <div class="col-12">
+   <h4><span style="padding:3%"i class="fas fa-ambulance fa-3x"></i></span>Emergency services</h4>
+   <p style="padding-left:3%;">We provide links and hotline numbers to the emergency services providers, including the hospitals and police hotlines.</p>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col-12">
+ <h4><span style="padding:3%"><i class="fas fa-hands-helping fa-3x"></i></span>Support System</h4>
+ <p style="padding-left:3%;">We provide the reliable support system, linkin our sisters to established organizations which are out to support the females, and spacificaly, those that surport female reproductive health.</p>
+ </div>
+ </div>
+     </div>
+    <div class="col-1">
+
+    </div>
+   </div>
+   </div>
+ </section>
+<!-- corousel two -->
+<section id="News">
+  <h3>News and Blogs</h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+   </ol>
+
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner">
+     <div class="item active">
+       <img src="images/quote-our-bodies-ourselves-is-the-bible-for-women-s-health-it-has-served-as-a-way-for-women-byllye-avery-73-52-01.jpg" alt="Los Angeles" style="width:100%;">
+     </div>
+
+     <div class="item">
+       <img src="images/quote-women-in-particular-need-to-keep-an-eye-on-their-physical-and-mental-health-because-michelle-obama-21-87-40.jpg" alt="Chicago" style="width:100%;">
+     </div>
+
+     <div class="item">
+       <img src="images/quote-our-bodies-ourselves-is-the-bible-for-women-s-health-it-has-served-as-a-way-for-women-byllye-avery-73-52-01.jpg" alt="New york" style="width:100%;">
+     </div>
+   </div>
+
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+</section>
+<!-- end of corousel two -->
+
+      <section style="padding-top:5%; padding-bottom:5%;">
+        <div class="row">
+          <div class="col-1">
+
+          </div>
+          <div class="col-5">
+            <h1>Talking about periods is a revolutionary act when women and girls worldwide suffer shame and discrimination</h1>
+            <strong><i>At any one time, around 300 million of us are on our period, yet the subject still makes many people cringe with embarrassment</i></strong>
+            To say women’s bodies are remarkable is an understatement. We can grow a human; that’s incredible.
+             We can be cooking, eating, playing sport, and at the same time growing a lung, or the nervous system, or the
+            reproductive organs of a new life – multitasking on a magnificently creative level. .....
+          </div>
+          <div class="col-5">
+              <img src="images/reproductive-health-in-Africa-06.width-800.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-1">
+
+          </div>
+        </div>
+      </section>
+
+<!-- element goes here -->
+          <div class="card-footer" style="background-color:#081f3e">
+
+                  <footer class="footer-area section-padding-100">
+
+                      <div class="main-footer-area">
+                        <div class="container-fluid">
+                          <div class="row">
+                            <div class="col-12 col-sm-6 col-xl-3">
+                              <div class="footer-widget-area">
+                                <div class="footer-logo">
+                                  <img src="images/nyTRa1560879050.png" height="100" class="img-fluid" alt="">
+                                </div>
+                                <p>We are a community that believes that every girl deserves a better health. A holistic health defines the maximum proctivity of a person, it is a portion of everyone to be healthy.</p>
+                                <div class="footer-social-info">
+                                  <a href="#"><i class="fab fa-google-plus-square"></i></a>
+                                  <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                                  <a href="#"><i class="fab fa-facebook"></i></a>
+                                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-xl-3">
+                              <div class="footer-widget-area">
+                                <div class="widget-title">
+                                  <h6>Latest News</h6>
+                                </div>
+                                <div class="widget-blog-post">
+
+                                  <div class="widget-single-blog-post d-flex">
+                                    <div class="widget-post-thumbnail">
+                                      <img src="images/ln2 (1).jpg" alt="">
+                                    </div>
+                                    <div class="widget-post-content">
+                                      <a href="https://www.whatisepigenetics.com/stem-cells-obtained-from-menstrual-blood-may-epigenetically-inhibit-liver-cancer/" target="blank">
+                                        Menstrual Cells epigeneticaly inhibiting cancer </a>
+                                      <p>Dec 02, 2017</p>
+                                    </div>
+                                  </div>
+
+                                    <div class="widget-single-blog-post d-flex">
+                                      <div class="widget-post-thumbnail">
+                                        <img src="images/ln1.jpg" alt="">
+                                      </div>
+                                      <div class="widget-post-content">
+                                        <a href="https://www.medicalnewstoday.com/articles/324002.php">Remedies for irregular bleeding</a>
+                                        <p>Dec 02, 2017</p>
+                                      </div>
+                                    </div>
+
+                                    <div class="widget-single-blog-post d-flex">
+                                      <div class="widget-post-thumbnail">
+                                        <img src="images/ln3 (1).jpg" alt="">
+                                      </div>
+                                      <div class="widget-post-content">
+                                        <a href="http://www.health.go.ke/government-scales-up-child-health-interventions-nairobi-kenya-14th-november-2018/">Health department advice</a>
+                                        <p>Dec 02, 2017</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-6 col-xl-3">
+                                <div class="footer-widget-area">
+                                  <div class="widget-title">
+                                    <h6>Contact Form</h6>
+                                  </div>
+
+                                  <div class="footer-contact-form" id="contact">
+                                    <form action="/action_page.php" method="post">
+
+                                        <input type="text" class="form-control border-top-0 border-right-0 border-left-0" name="footer-name" id="footer-name" placeholder="Name" data-kwimpalastatus="alive" data-kwimpalaid="1560934848757-2">
+                                        <input type="email" class="form-control border-top-0 border-right-0 border-left-0" name="footer-email" id="footer-email" placeholder="Email" data-kwimpalastatus="alive" data-kwimpalaid="1560934848757-3">
+                                        <textarea name="message" class="form-control border-top-0 border-right-0 border-left-0" id="footerMessage" placeholder="Message" tabindex="1" style="overflow: hidden; outline: none;"></textarea>
+                                        <button type="submit" class="btn medilife-btn">Contact Us <span>+</span></button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-xl-3">
+                                  <div class="footer-widget-area">
+                                    <div class="widget-title">
+                                      <h6>News Letter</h6>
+                                    </div>
+                                    <div class="footer-newsletter-area">
+                                      <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  	#mc_embed_signup{background:#081f3e; clear:left; font:14px Helvetica,Arial,sans-serif;  width:500px;}
+  	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup" class="footer-newsletter-area col-12 col-sm-6 col-xl-3" style="color:white" >
+  <form  action="https://outlook.us20.list-manage.com/subscribe/post?u=0444abfe0c31b684204e2d317&amp;id=fd949a67ba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+  <div class="indicates-required " style="color:white"><span class="asterisk">*</span> indicates required</div>
+  <div class="mc-field-group">
+  	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+  </label>
+  	<input type="email" value="" name="EMAIL" class="required email " id="mce-EMAIL">
+  </div>
+  <div class="mc-field-group">
+  	<label for="mce-FNAME">First Name </label>
+  	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+  </div>
+  <div class="mc-field-group">
+  	<label for="mce-TYPE">Your message  <span class="asterisk">*</span>
+  </label>
+  	<input type="text" value="" name="TYPE" class="required" id="mce-TYPE">
+  </div>
+  	<div id="mce-responses" class="clear">
+  		<div class="response" id="mce-error-response" style="display:none"></div>
+  		<div class="response" id="mce-success-response" style="display:none"></div>
+  	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <!-- <div style="position: absolute; left:2px;" aria-hidden="true"><input type="text" name="b_0444abfe0c31b684204e2d317_fd949a67ba" tabindex="-1" value=""></div> -->
+
+      <div class="clear" style="padding-top:3%"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-primary button"></div>
+      </div>
+      <p>Subscribe to receive our newsleter</p>
+  </form>
+  </div>
+
+  <!--End mc_embed_signup-->
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="bottom-footer-area">
+                              <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col-12">
+                                    <div class="bottom-footer-content">
+
+                                      <div class="copywrite-text">
+                                        <p>
+                                          Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This page is made with <i class="far fa-heart"></i> by <a href="https://colorlib.com" target="_blank">WH group</a>
+
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </footer>
+                        </div>
+                      </div>
 </body>
 
 </html>
